@@ -24,7 +24,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 900))
 LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Get this value from @BRANDRD_ROBOT on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6258877205))
+OWNER_ID = int(getenv("OWNER_ID", 6642099030))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -34,15 +34,15 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/WCGKING/BrandrdXMusic",
+    "https://github.com/Kurama-fox/princeMusic.git",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/BRANDRD_BOT")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/BRANDED_WORLD")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/+PYBPkeXKPpRlNzZl")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+PYBPkeXKPpRlNzZl")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -83,22 +83,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://te.legra.ph/file/62c76ac2095332a0ede75.jpg"
+    "START_IMG_URL", "https://wallpapers.com/images/high/neon-anime-musical-artist-hatsune-miku-7y1x3vtfjuin2wr1.webp"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://te.legra.ph/file/4f59fb748e1990acfa297.jpg"
+    "PING_IMG_URL", "https://wallpapers.com/images/high/music-anime-red-hair-61ybliqiyj5nw12e.webp"
 )
-PLAYLIST_IMG_URL = "https://te.legra.ph/file/14eb59ea7d31229d8d751.jpg"
-STATS_IMG_URL = "https://te.legra.ph/file/4310ea5f523520b2b765b.jpg"
-TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/923c1faac33d8c70335dc.jpg"
-TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/6c66f8b192532fe758e82.jpg"
-STREAM_IMG_URL = "https://te.legra.ph/file/ebc4dc6357be06e08a3ed.jpg"
-SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/d339f390ec168c19879c6.jpg"
-YOUTUBE_IMG_URL = "https://te.legra.ph/file/ee0cd53ab73f08f4a3627.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/5f9fb5bba66021c782d96.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/affe0afec5c7ad63676a4.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/3c446e8dee78ed0ca62ff.jpg"
-
+PLAYLIST_IMG_URL = "https://img.freepik.com/free-photo/girl-with-guitar-shirt-that-says-i-am-girl_1340-32640.jpg?t=st=1706883265~exp=1706886865~hmac=e5cde86421afcfc0bec2b8f79aa79fe6466760dc0031021285b37b369aec34f0&w=1380"
+STATS_IMG_URL = "https://img.freepik.com/free-photo/front-view-anime-couple-playing-guitar_23-2150970747.jpg?t=st=1706883360~exp=1706886960~hmac=6d920a865401fd1b7ba3020ebb926d689067634ce91bf2a305f553b661f0474b&w=1800"
+TELEGRAM_AUDIO_URL = "https://img.freepik.com/free-vector/gradient-lo-fi-illustration_23-2149375747.jpg?w=996&t=st=1706883497~exp=1706884097~hmac=71770d5c7d25392d24ed70b505387db809f45a6f8a60ae0e6f1619bfc08f1ba6"
+TELEGRAM_VIDEO_URL = "https://img.freepik.com/free-photo/beautiful-anime-character-cartoon-scene_23-2151035171.jpg?t=st=1706883738~exp=1706887338~hmac=d97e22f5584f9ee31a75b6000682e44fe801f64244728007226c7d405abe061e&w=740"
+STREAM_IMG_URL = "https://img.freepik.com/free-photo/full-shot-ninja-wearing-equipment_23-2150960820.jpg?t=st=1706883873~exp=1706887473~hmac=d3b31e7926ffa9cdcbfffc50365dd1cbac415654e38d4c55e95640a2444f8c9c&w=740"
+SOUNCLOUD_IMG_URL = "https://img.freepik.com/free-photo/still-life-with-musical-instrument_23-2150466299.jpg?t=st=1706883961~exp=1706887561~hmac=7924e44990d107828e235c265e7015dcfcf6f956f97eba08e421efaae8394870&w=740"
+YOUTUBE_IMG_URL = "https://img.freepik.com/free-photo/men-women-embrace-sunset-generative-ai_188544-12581.jpg?w=1800&t=st=1706884154~exp=1706884754~hmac=cf5484517938030f03e02f1d0b63505cafa322150b43bda337a93f1f615f8964"
+SPOTIFY_ARTIST_IMG_URL = "https://img.freepik.com/free-photo/medium-shot-anime-couple-hugging_23-2150970652.jpg?t=st=1706884323~exp=1706887923~hmac=42fb5fa6f6bac5c0da99f471ba78a816f1e7e12943ceb3ce79cd5c2b87dbb7fd&w=1380"
+SPOTIFY_ALBUM_IMG_URL = "https://img.freepik.com/free-photo/medium-shot-couple-hugging-fantasy-world_23-2150900443.jpg?t=st=1706884413~exp=1706888013~hmac=17b090baeb7fe4b24cb70f4bb3b91350f1e7e3bf40b6de2525c1580f58a99140&w=996"
+SPOTIFY_PLAYLIST_IMG_URL = "https://img.freepik.com/free-photo/full-shot-couple-hugging-fantasy-world_23-2150900473.jpg?t=st=1706884471~exp=1706888071~hmac=9f25d303cfdd9f173d42add803a037f2c8e0f40c5a9422bf18520aeb1674a13b&w=996"
 
 def time_to_seconds(time):
     stringt = str(time)
